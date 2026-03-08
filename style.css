@@ -16,6 +16,7 @@ align-items:center;
 .main{
 
 text-align:center;
+
 background:rgba(255,255,255,0.2);
 
 backdrop-filter:blur(12px);
@@ -25,6 +26,9 @@ padding:40px;
 border-radius:20px;
 
 box-shadow:0 10px 40px rgba(0,0,0,0.2);
+
+width:90%;
+max-width:600px;
 
 }
 
@@ -37,9 +41,14 @@ font-size:40px;
 input{
 
 padding:12px;
-width:260px;
+
+width:90%;
+max-width:300px;
+
 border:none;
+
 border-radius:10px;
+
 font-size:16px;
 
 margin-top:10px;
@@ -82,7 +91,8 @@ padding:25px;
 
 border-radius:15px;
 
-width:400px;
+width:100%;
+max-width:500px;
 
 display:none;
 
@@ -147,5 +157,21 @@ animation:boom 1s forwards;
 0%{transform:scale(0)}
 80%{transform:scale(2)}
 100%{opacity:0}
+
+}
+
+@media (max-width:600px){
+
+h1{
+font-size:28px;
+}
+
+.main{
+padding:25px;
+}
+
+button{
+width:90%;
+}
 
 }
